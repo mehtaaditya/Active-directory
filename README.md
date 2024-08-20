@@ -8,3 +8,5 @@ List of tasks completed in this Active directory/Entra ID lab
 5. I then went ahead and downloaded Microsft Entra connect msi setup and added my global admin password for azure ad and administrator password for active diretory to setup the intial configurations
 6. there was initially a problem in syncing the on prem server to entra and later i found that TLS must be turned on for the entra connect server. I went ahead and used the script above to enable TLS1.2 found in microsft learn docs.
 7. Setup then concluded and the sync was succesfull and the onprem accounts started showing up in entra id (worker1) 
+8. I made users which were later synced to Entra ID and changed the custom attributes which can be syncronized to Entra ID as per the demand.
+9. Used password write back to reset password for on prem users
