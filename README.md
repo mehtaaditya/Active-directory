@@ -1,5 +1,6 @@
 # Active-directory
-lab with entra id connect and how to setup and sync onprem identities
+##lab with entra id connect and how to setup and sync onprem identities
+
 List of tasks completed in this Active directory/Entra ID lab
 1. First i downloaded the latest version of windows server 2022 evaluation version and loaded it in virtual box and setup the win server machine
 2. I added roles and feature to the server for Active Diretory domain services. I also added some features to add users and group option present in windows server manager
