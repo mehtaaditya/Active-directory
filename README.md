@@ -32,7 +32,47 @@ After the delpoyment add users and groups to the domain
 >>>>![VirtualBox_WINSERV(interface)_20_08_2024_15_33_45](https://github.com/user-attachments/assets/cd6becc6-7669-4202-964d-17ae01610e75)
 >>>>![VirtualBox_WINSERV(interface)_20_08_2024_16_36_30](https://github.com/user-attachments/assets/6131ce49-cad0-4301-98a8-ebc25da8e85a)
 >>>>![VirtualBox_WINSERV(interface)_20_08_2024_18_36_10](https://github.com/user-attachments/assets/96008e09-fa25-4008-b44e-a8c7698f923b)
->>>>![image](https://github.com/user-attachments/assets/20ad771f-d2be-4865-b7fd-2fbe3ec430a7)
+>>>>On prem identities are now syncronized to Entra ID
+>>>>![Screenshot 2024-08-20 184104](https://github.com/user-attachments/assets/dd4af6c8-39f4-4604-bce6-2bf1c3369f9e)
+>>>>now i can use my on prem credentials ( worker1) to login to Entra ID
+>>>>![Screenshot 2024-08-20 184153](https://github.com/user-attachments/assets/9000ffc7-4b90-45e6-9d20-d6f61373b8da)
+>>>>Groups syncronized as well
+>>>>![Screenshot 2024-08-20 192651](https://github.com/user-attachments/assets/076edea5-bb0b-42cd-9fcf-be9742891bbf)
+>>>>we can also use domain filering rules to choose the custom attributes we want to sync to Entra ID
+>>>>![VirtualBox_WINSERV(interface)_20_08_2024_20_15_19](https://github.com/user-attachments/assets/d0ef37dc-ad7c-40db-a5cf-29ec5ae38195)
+>>>>Configuring pass thru sync as pash hash was already configures when we used express settings, Also enabling passwork write back feature( this feature will not work if on prem domain is not verified with DNS)
+>>>>![VirtualBox_WINSERV(interface)_20_08_2024_20_15_51](https://github.com/user-attachments/assets/3c3b81dd-a62b-43e6-b270-e7c636a97ccc)
+>>>>![VirtualBox_WINSERV(interface)_20_08_2024_20_17_17](https://github.com/user-attachments/assets/5c0ebd22-b1f3-436b-a6cd-fcfc2cff0fbc)
+>>>>![VirtualBox_WINSERV(interface)_20_08_2024_20_19_54](https://github.com/user-attachments/assets/cccdf79f-4e13-43c3-acf9-a61f11a27572)
+>>>>>>>>![VirtualBox_WINSERV(interface)_20_08_2024_22_21_13](https://github.com/user-attachments/assets/c6708053-8dc0-4dcd-bd62-23d7c2f01486)
+>>>>made a new account to check sync process after the intial sync(worker2). Account appeared shortly afterwards
+>>>>![Screenshot 2024-08-20 202222](https://github.com/user-attachments/assets/4fc59569-6aec-49c0-885a-059b4654d386)
+>>>>password write back feature for onprem accounts
+>>>>![Screenshot 2024-08-20 204807](https://github.com/user-attachments/assets/2746ce88-da2a-45bb-b0e6-9173bfd70336)
+>>>>checking the sync status of the Entra connect in the portal
+>>>>![Screenshot 2024-08-20 205343](https://github.com/user-attachments/assets/5719343f-dc20-4355-97d3-b78d45afeebe)
+>>>>>> pass through agent running status(using 1 although three are recomended)
+![Screenshot 2024-08-20 224708](https://github.com/user-attachments/assets/ee79eb0a-76c0-445e-8d9b-1748be5d0e43)
+>>>>>>>>pass through sync didnt work for me. after many hours of searching and trubleshotting i found this
+>>>>>![Screenshot 2024-08-20 234053](https://github.com/user-attachments/assets/2307f3c8-b83e-4caa-9260-c4320f262fdb)
+>>>>>>Now lets register an app in Entra ID. Give it a name and return uri as blank for now
+>>>>>>>>![Screenshot 2024-08-21 132645](https://github.com/user-attachments/assets/2b468035-4e0a-4a6e-9a31-cf713901e9a4)
+>>>>>>>>adding client secret
+>>>>>>>>![Screenshot 2024-08-21 132324](https://github.com/user-attachments/assets/d69a92ce-6201-4083-9fc9-ad9c73dbbc57)
+>>>>>>>>now add sign in uri and sign out uri as follows
+![Screenshot 2024-08-21 132307](https://github.com/user-attachments/assets/298c7ace-fb9e-4e7e-a4b7-01a952fe5930)
+
+>>>>>![Screenshot 2024-08-21 132313](https://github.com/user-attachments/assets/63600554-2edb-4ec2-8ad9-9a2fb3cc3a38)
+>>>>made a user flow to sign up and added custom attributes name place phonenumber etc
+![Screenshot 2024-08-21 132324](https://github.com/user-attachments/assets/cfe0212f-2e2c-4c06-ac48-b9551500ed26)
+>>>>>ran the application code of .net app changing the app setting and app secrets and tenant info
+>>>>>
+![Screenshot 2024-08-21 120928](https://github.com/user-attachments/assets/7c11e8cb-fe66-4969-8651-7ddbdb1033d2)
+# LAB CONCLUDED
+
+
+
+
 
 
 
